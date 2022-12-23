@@ -19,7 +19,10 @@ function VideoItem(props) {
               data-category={props.description}
             >
               <video className="film-video">
-                <source src={props.videosrc} type={props.filetype} />
+                <source
+                  src={require(`../../assets/videos/${props.filename}.${props.extension}`)}
+                  type={props.filetype}
+                />
               </video>
               <div className="filmBtn">
                 <button className="btn--primary btn--large">

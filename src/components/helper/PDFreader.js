@@ -9,8 +9,10 @@ function PDFreader() {
         If you see a blank page in the web browser, you may need to update your
         pdf reader or contact us for a hard copy.
       </span>
-      <object
-        data={filename}
+      <embed
+        src={require(`../../assets/documents/${filename}`)}
+        frameBorder="0"
+        scrolling="auto"
         width="100%"
         height="725px"
         aria-labelledby="label1"

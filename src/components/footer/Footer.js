@@ -3,8 +3,8 @@ import "../../styles/Footer.css";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const termFile = "./documents/terms-and-conditions.pdf";
-  const privacyFile = "./documents/privacy-policy.pdf";
+  const termFile = "terms-and-conditions.pdf";
+  const privacyFile = "privacy-policy.pdf";
 
   return (
     <div className="footer-container">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <img
                   className="mobile-app-icon-google mobile-app-image"
                   alt="Download mobile app from google"
-                  src="./logo/google-play-badge.png"
+                  src={require(`../../assets/icons/google-play-badge.png`)}
                 />
               </a>
 
@@ -66,7 +66,7 @@ export default function Footer() {
                 <img
                   className="mobile-app-icon-apple mobile-app-image"
                   alt="Download mobile app from apple"
-                  src="./logo/download-on-the-app-store-badge.png"
+                  src={require(`../../assets/icons/download-on-the-app-store-badge.png`)}
                 />
               </a>
             </div>
