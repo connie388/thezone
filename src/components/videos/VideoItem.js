@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Cards.css";
-import { Button } from "../helper/Button";
-
+import "../../styles/Helper.css";
 function VideoItem(props) {
   return (
     <>
@@ -23,10 +22,10 @@ function VideoItem(props) {
                 <source src={props.videosrc} type={props.filetype} />
               </video>
               <div className="filmBtn">
-                <Button buttonStyle="btn--primary" buttonSize="btn--large">
+                <button className="btn--primary btn--large">
                   START WATCHING
                   <i className="far fa-play-circle" />
-                </Button>
+                </button>
               </div>
             </figure>
           </div>
