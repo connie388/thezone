@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/thezone/static/css/main.870a3527.css",
-    "main.js": "/thezone/static/js/main.e21b1020.js",
+    "main.js": "/thezone/static/js/main.541c3310.js",
     "static/media/img-career.jpg": "/thezone/static/media/img-career.bca41152ee626837417b.jpg",
+    "static/media/img-party.jpg": "/thezone/static/media/img-party.ef37445958073ac4e632.jpg",
     "static/media/video-2.mp4": "/thezone/static/media/video-2.76bf4de3d5d84701c980.mp4",
     "static/media/video-1.mp4": "/thezone/static/media/video-1.3a680575671f8cf86cf1.mp4",
     "static/media/img-home-page.jpg": "/thezone/static/media/img-home-page.5526964933ac0ebefb3d.jpg",
@@ -12,26 +13,37 @@
     "static/media/img-4.jpg": "/thezone/static/media/img-4.57691959aca184e7b921.jpg",
     "static/media/img-service.jpg": "/thezone/static/media/img-service.4cab1ed9319e47826c14.jpg",
     "static/media/img-products.jpg": "/thezone/static/media/img-products.b92adc0d2097284ee26e.jpg",
+    "static/media/img6.jpg": "/thezone/static/media/img6.49482c6f89fa09e52ebb.jpg",
+    "static/media/terms-and-conditions.pdf": "/thezone/static/media/terms-and-conditions.13c1560141bef8cdc810.pdf",
     "static/media/img-handshake.jpg": "/thezone/static/media/img-handshake.4db15fbcf11992e0304a.jpg",
+    "static/media/privacy-policy.pdf": "/thezone/static/media/privacy-policy.3862bf1dd0d8debeb24c.pdf",
     "static/media/img-2.jpg": "/thezone/static/media/img-2.ff24302a6a3bdc15ff86.jpg",
+    "static/media/img2.jpg": "/thezone/static/media/img2.3815c763e25b2322dc00.jpg",
+    "static/media/img4.jpg": "/thezone/static/media/img4.16dc61f2842f7d5b5008.jpg",
     "static/media/img-pricing.jpg": "/thezone/static/media/img-pricing.09925a84127cdc64ab47.jpg",
     "static/media/img-team.jpeg": "/thezone/static/media/img-team.d0b8049f1cc5929014e1.jpeg",
+    "static/media/img8.jpg": "/thezone/static/media/img8.b27db9cbfc592d71dbf8.jpg",
     "static/media/img-event-consultation.jpeg": "/thezone/static/media/img-event-consultation.4633653204bf6e9a2b65.jpeg",
     "static/media/img-advertising.jpg": "/thezone/static/media/img-advertising.ec84133042808f64272d.jpg",
     "static/media/img-catering-service.jpg": "/thezone/static/media/img-catering-service.55273f816822c5fbf743.jpg",
     "static/media/img-photography.jpeg": "/thezone/static/media/img-photography.84d264d927bab94895e5.jpeg",
     "static/media/img-community.jpg": "/thezone/static/media/img-community.651f02231e1ee8a42fec.jpg",
+    "static/media/img5.jpg": "/thezone/static/media/img5.4ccfb68545ffa3cc11a3.jpg",
+    "static/media/img1.jpg": "/thezone/static/media/img1.ce846d7b4f84cd9015e4.jpg",
+    "static/media/img7.jpg": "/thezone/static/media/img7.f29d73a60de200733e0c.jpg",
     "static/media/img-3.jpg": "/thezone/static/media/img-3.8b3c30e30909a4f536d4.jpg",
+    "static/media/img3.jpg": "/thezone/static/media/img3.2bf92d2886741b7b2bd7.jpg",
     "static/media/img-phone.jpg": "/thezone/static/media/img-phone.bf75262b316f212482df.jpg",
+    "static/media/download-on-the-app-store-badge.png": "/thezone/static/media/download-on-the-app-store-badge.fba0f3fadc5a9eeb92cf.png",
     "index.html": "/thezone/index.html",
     "static/media/arrow-right-from-bracket-solid.svg": "/thezone/static/media/arrow-right-from-bracket-solid.d9eda8fe3e429d3e8f10ef4248da740b.svg",
     "static/media/angles-right-solid.svg": "/thezone/static/media/angles-right-solid.0b9c86ad67909db6832099fc4d655966.svg",
     "static/media/angles-left-solid.svg": "/thezone/static/media/angles-left-solid.3489a672e1a4f0a34773ca78dd9713ae.svg",
     "main.870a3527.css.map": "/thezone/static/css/main.870a3527.css.map",
-    "main.e21b1020.js.map": "/thezone/static/js/main.e21b1020.js.map"
+    "main.541c3310.js.map": "/thezone/static/js/main.541c3310.js.map"
   },
   "entrypoints": [
     "static/css/main.870a3527.css",
-    "static/js/main.e21b1020.js"
+    "static/js/main.541c3310.js"
   ]
 }
