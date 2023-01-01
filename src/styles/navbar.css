@@ -86,14 +86,41 @@
     display: block;
   }
 
+  .topnav a.hamburger-icon:hover {
+    background-color: transparent;
+  }
+
+  .hamburger-icon {
+    float: right;
+    display: block;
+    margin: 0;
+    padding: 19px 16px;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    height: auto;
+  }
+  .hamburger-icon span {
+    width: 40px;
+    background-color: #000;
+    height: 5px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .hamburger-icon span:last-child {
+    margin-bottom: 0px;
+  }
+
   .topnav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  /* .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
   .topnav.responsive a {
     float: none;
     display: block;

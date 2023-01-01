@@ -39,8 +39,13 @@ function Navbar() {
         </div>
       </div>
 
-      <Link to="#" className="icon" onClick={myFunction}>
-        &#9776;
+      <Link to="#" className="icon hamburger-icon" onClick={myFunction}>
+        {/* &#9776; */}
+        <label>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </label>
       </Link>
     </div>
   );
