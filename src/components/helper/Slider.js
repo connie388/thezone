@@ -1,64 +1,62 @@
 import React, { useState } from "react";
 import "../../styles/Slider.css";
-import BtnSlider from "./BtnSlider.js";
+import leftArrow from "../../assets/icons/angles-left-solid.svg";
+import rightArrow from "../../assets/icons/angles-right-solid.svg";
 import dataSlider from "./dataSlider";
 
 export default function Slider() {
-  const [slideIndex, setSlideIndex] = useState(1);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    if (slideIndex !== dataSlider.length) {
-      setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === dataSlider.length) {
-      setSlideIndex(1);
+    const next = currentSlide + 1;
+    if (next === dataSlider.length) {
+      setCurrentSlide(0);
+    } else {
+      setCurrentSlide(next);
     }
   };
 
   const prevSlide = () => {
-    if (slideIndex !== 1) {
-      setSlideIndex(slideIndex - 1);
-    } else if (slideIndex === 1) {
-      setSlideIndex(dataSlider.length);
+    if (currentSlide !== 0) {
+      setCurrentSlide(currentSlide - 1);
+    } else if (currentSlide === 0) {
+      setCurrentSlide(dataSlider.length);
     }
   };
 
   const moveDot = (index) => {
-    setSlideIndex(index);
+    setCurrentSlide(index);
   };
 
   return (
-    <div>
-      <h1 className="standard-header">OUR FEATURE ROOMS</h1>
-      <div className="container-slider">
-        {dataSlider.map((obj, index) => {
-          return (
-            <div
-              key={obj.id}
-              className={
-                slideIndex === index + 1 ? "slide active-anim" : "slide"
-              }
-            >
-              {obj.title}/{obj.subTitle}
-              <img
-                alt="slide not found"
-                src={require(`../../assets/slideshow/${obj.img}`)}
-              />
-            </div>
-          );
-        })}
-        <BtnSlider moveSlide={nextSlide} direction={"next"} />
-        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-
-        <div className="container-dots">
-          {Array.from({ length: `${dataSlider.length}` }).map((item, index) => (
-            <div
-              key={index}
-              onClick={() => moveDot(index + 1)}
-              className={slideIndex === index + 1 ? "dot active" : "dot"}
-            ></div>
-          ))}
+    <>
+      <div>
+        <h1 className="standard-header">OUR FEATURE ROOMS</h1>
+        <div className="container-slider">
+          {dataSlider[currentSlide].title}/{dataSlider[currentSlide].subTitle}
+          <div className="slide active-anim">
+            <img
+              src={require(`../../assets/slideshow/${dataSlider[currentSlide].img}`)}
+              alt="Slide"
+            />
+          </div>
+          <button onClick={prevSlide} className="btn-slide prev">
+            <img src={rightArrow} alt="right arrow" />
+          </button>
+          <button onClick={nextSlide} className="btn-slide next">
+            <img src={leftArrow} alt="left arrow" />
+          </button>
+          <div className="container-dots">
+            {Array.from({ length: `${dataSlider.length}` }).map((_, index) => (
+              <div
+                key={index}
+                onClick={() => moveDot(index)}
+                className={currentSlide === index ? "dot active" : "dot"}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
