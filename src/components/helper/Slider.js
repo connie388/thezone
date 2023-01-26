@@ -20,7 +20,7 @@ export default function Slider() {
     if (currentSlide !== 0) {
       setCurrentSlide(currentSlide - 1);
     } else if (currentSlide === 0) {
-      setCurrentSlide(dataSlider.length);
+      setCurrentSlide(dataSlider.length - 1);
     }
   };
 
@@ -41,10 +41,10 @@ export default function Slider() {
             />
           </div>
           <button onClick={prevSlide} className="btn-slide prev">
-            <img src={rightArrow} alt="right arrow" />
+            <img src={leftArrow} alt="left arrow" />
           </button>
           <button onClick={nextSlide} className="btn-slide next">
-            <img src={leftArrow} alt="left arrow" />
+            <img src={rightArrow} alt="right arrow" />
           </button>
           <div className="container-dots">
             {Array.from({ length: `${dataSlider.length}` }).map((_, index) => (
